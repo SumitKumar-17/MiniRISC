@@ -1,0 +1,497 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Nov 12 16:40:18 2024
+# Process ID: 23160
+# Current directory: C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1
+# Command line: vivado.exe -log risc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source risc.tcl
+# Log file: C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/risc.vds
+# Journal file: C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1\vivado.jou
+# Running On        :Pavilion-Antik
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5700U with Radeon Graphics         
+# CPU Frequency     :1797 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16455 MB
+# Swap memory       :16106 MB
+# Total Virtual     :32561 MB
+# Available Virtual :13942 MB
+#-----------------------------------------------------------
+source risc.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 530.316 ; gain = 199.309
+Command: read_checkpoint -auto_incremental -incremental C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/utils_1/imports/synth_1/risc.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/utils_1/imports/synth_1/risc.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top risc -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12680
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1411.340 ; gain = 449.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'risc' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/RISC.v:2]
+INFO: [Synth 8-6157] synthesizing module 'two2four_maddr' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/mux_s.v:1]
+INFO: [Synth 8-251] StackOP: 2'bxx [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/mux_s.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'two2four_maddr' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/mux_s.v:1]
+INFO: [Synth 8-6157] synthesizing module 'instruction_mem' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/instruction_mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/.Xil/Vivado-23160-Pavilion-Antik/realtime/instruction_memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (0#1) [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/.Xil/Vivado-23160-Pavilion-Antik/realtime/instruction_memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_mem' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/instruction_mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/program_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/program_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'instruction_decoder' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/instruction_decoding.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_decoder' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/instruction_decoding.v:1]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/register_bank.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/register_bank.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/alu_integration.v:2]
+INFO: [Synth 8-6157] synthesizing module 'adder_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/adder_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder_structural' [C:/Users/thean_f8wkkz4/Downloads/12thoct/full_adder_structural.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder_structural' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/full_adder_structural.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'adder_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/adder_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'subtractor_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/subtractor_32_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'subtractor_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/subtractor_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'and_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/and_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'and_alu' [C:/Users/thean_f8wkkz4/Downloads/12thoct/and_alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'and_alu' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/and_alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'and_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/and_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'or_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/or_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'or_alu' [C:/Users/thean_f8wkkz4/Downloads/12thoct/or_alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'or_alu' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/or_alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'or_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/or_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xor_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/xor_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xor_alu' [C:/Users/thean_f8wkkz4/Downloads/12thoct/xor_alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xor_alu' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/xor_alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xor_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/xor_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'not_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/not_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'not_alu' [C:/Users/thean_f8wkkz4/Downloads/12thoct/not_alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'not_alu' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/not_alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'not_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/not_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sll_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/sll_32_bit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sll_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/sll_32_bit.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sra_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/sra_32_bit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sra_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/sra_32_bit.v:22]
+INFO: [Synth 8-6157] synthesizing module 'srl_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/srl_32_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'srl_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/srl_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'slt_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/slt_32_bit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'slt_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/slt_32_bit.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sgt_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/sgt_32_bit.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sgt_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/sgt_32_bit.v:22]
+INFO: [Synth 8-6157] synthesizing module 'nor_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/nor_32_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'nor_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/nor_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lui_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/lui_32_bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lui_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/lui_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ham_32_bit' [C:/Users/thean_f8wkkz4/Downloads/12thoct/ham_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hamm_alu' [C:/Users/thean_f8wkkz4/Downloads/12thoct/hamm_alu.v:22]
+INFO: [Synth 8-6157] synthesizing module 'two_bit_adder' [C:/Users/thean_f8wkkz4/Downloads/12thoct/2_bit_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'two_bit_adder' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/2_bit_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'three_bit_adder' [C:/Users/thean_f8wkkz4/Downloads/12thoct/3_bit_adder.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'three_bit_adder' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/3_bit_adder.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'hamm_alu' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/hamm_alu.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ham_32_bit' (0#1) [C:/Users/thean_f8wkkz4/Downloads/12thoct/ham_32_bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cmov' [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/sources_1/new/cmov.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cmov' (0#1) [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/sources_1/new/cmov.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_control_decoder' [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/sources_1/new/alu_control_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_control_decoder' (0#1) [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/sources_1/new/alu_control_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/alu_integration.v:2]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/.Xil/Vivado-23160-Pavilion-Antik/realtime/data_memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (0#1) [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/.Xil/Vivado-23160-Pavilion-Antik/realtime/data_memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'main_control' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/main_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'main_control' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/main_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'branching_mechanism' [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/branching_mechanism.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'branching_mechanism' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/branching_mechanism.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'risc' (0#1) [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/RISC.v:2]
+WARNING: [Synth 8-3848] Net interrupt in module/entity risc does not have driver. [C:/Users/thean_f8wkkz4/Downloads/Lab_Day_15/RISC.v:45]
+WARNING: [Synth 8-7129] Port addr[31] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port memRead in module data_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[31] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[30] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[29] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[28] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[27] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[26] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[25] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[24] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[23] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[22] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[21] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[20] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[19] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[18] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[17] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[16] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[15] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[14] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[13] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[12] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[11] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[10] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[9] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[8] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[7] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[6] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[5] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[4] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module srl_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[31] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[30] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[29] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[28] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[27] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[26] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[25] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[24] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[23] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[22] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[21] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[20] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[19] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[18] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[17] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[16] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[15] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[14] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[13] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[12] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[11] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[10] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[9] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[8] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[7] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[6] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[5] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[4] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[3] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[2] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module sra_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[31] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[30] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[29] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[28] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[27] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[26] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[25] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[24] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[23] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[22] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[21] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[20] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[19] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[18] in module sll_32_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[17] in module sll_32_bit is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1533.281 ; gain = 571.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1533.281 ; gain = 571.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1533.281 ; gain = 571.117
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1533.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.gen/sources_1/ip/instruction_memory_3/instruction_memory/instruction_memory_in_context.xdc] for cell 'IM/IM'
+Finished Parsing XDC File [c:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.gen/sources_1/ip/instruction_memory_3/instruction_memory/instruction_memory_in_context.xdc] for cell 'IM/IM'
+Parsing XDC File [c:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.gen/sources_1/ip/data_memory_2/data_memory/data_memory_in_context.xdc] for cell 'DM/DM'
+Finished Parsing XDC File [c:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.gen/sources_1/ip/data_memory_2/data_memory/data_memory_in_context.xdc] for cell 'DM/DM'
+Parsing XDC File [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/constrs_1/new/risc.xdc]
+Finished Parsing XDC File [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/constrs_1/new/risc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.srcs/constrs_1/new/risc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/risc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/risc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1635.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1635.258 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DM/DM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'IM/IM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for IM/IM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DM/DM. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 316   
+	   2 Input      1 Bit         XORs := 36    
++---Registers : 
+	               32 Bit    Registers := 18    
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 11    
+	   2 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 86    
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 10    
+	   6 Input    1 Bit        Muxes := 12    
+	  22 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP out0, operation Mode is: A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: operator out0 is absorbed into DSP out0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+ Sort Area is  out0_0 : 0 0 : 3101 5879 : Used 1 time 0
+ Sort Area is  out0_0 : 0 1 : 2778 5879 : Used 1 time 0
+ Sort Area is  out0_3 : 0 0 : 2759 5418 : Used 1 time 0
+ Sort Area is  out0_3 : 0 1 : 2659 5418 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |data_memory        |         1|
+|2     |instruction_memory |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |data_memory        |     1|
+|2     |instruction_memory |     1|
+|3     |BUFG               |     1|
+|4     |CARRY4             |   308|
+|5     |DSP48E1            |     3|
+|6     |LUT1               |    15|
+|7     |LUT2               |   117|
+|8     |LUT3               |   335|
+|9     |LUT4               |    88|
+|10    |LUT5               |  1068|
+|11    |LUT6               |   542|
+|12    |MUXF7              |   131|
+|13    |MUXF8              |    32|
+|14    |FDRE               |   632|
+|15    |FDSE               |     1|
+|16    |IBUF               |     2|
+|17    |OBUF               |    16|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1635.289 ; gain = 673.125
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 132 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:11 . Memory (MB): peak = 1635.289 ; gain = 571.117
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1635.289 ; gain = 673.125
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1635.289 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 474 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1635.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 66c77e09
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1635.289 ; gain = 1092.613
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1635.289 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/risc.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file risc_utilization_synth.rpt -pb risc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 16:41:50 2024...

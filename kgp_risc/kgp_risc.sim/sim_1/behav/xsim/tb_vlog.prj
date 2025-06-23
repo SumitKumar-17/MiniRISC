@@ -1,0 +1,46 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../kgp_risc.gen/sources_1/ip/data_memory_2/sim/data_memory.v" \
+"../../../../../../Downloads/Lab_Day_15/program_counter.v" \
+"../../../../../../Downloads/Lab_Day_15/RISC.v" \
+"../../../../../../Downloads/Lab_Day_15/instruction_decoding.v" \
+"../../../../../../Downloads/Lab_Day_15/mem.v" \
+"../../../../../../Downloads/Lab_Day_15/branching_mechanism.v" \
+"../../../../../../Downloads/Lab_Day_15/alu_integration.v" \
+"../../../../../../Downloads/Lab_Day_15/mux_s.v" \
+"../../../../../../Downloads/Lab_Day_15/register_bank.v" \
+"../../../../../../Downloads/Lab_Day_15/main_control.v" \
+"../../../../../../Downloads/Lab_Day_15/instruction_mem.v" \
+"../../../../../../Downloads/12thoct/not_32_bit.v" \
+"../../../../../../Downloads/12thoct/adder_32_bit.v" \
+"../../../../../../Downloads/12thoct/or_32_bit.v" \
+"../../../../../../Downloads/12thoct/or_alu.v" \
+"../../../../../../Downloads/12thoct/sll_32_bit.v" \
+"../../../../../../Downloads/12thoct/subtractor_32_bit.v" \
+"../../../../../../Downloads/12thoct/sgt_32_bit.v" \
+"../../../../../../Downloads/12thoct/2_bit_adder.v" \
+"../../../../../../Downloads/12thoct/not_alu.v" \
+"../../../../../../Downloads/12thoct/sra_32_bit.v" \
+"../../../../../../Downloads/12thoct/lui_32_bit.v" \
+"../../../../../../Downloads/12thoct/xor_32_bit.v" \
+"../../../../../../Downloads/12thoct/and_32_bit.v" \
+"../../../../../../Downloads/12thoct/hamm_alu.v" \
+"../../../../../../Downloads/12thoct/slt_32_bit.v" \
+"../../../../../../Downloads/12thoct/ham_32_bit.v" \
+"../../../../../../Downloads/12thoct/srl_32_bit.v" \
+"../../../../../../Downloads/12thoct/nor_32_bit.v" \
+"../../../../../../Downloads/12thoct/full_adder_structural.v" \
+"../../../../../../Downloads/12thoct/xor_alu.v" \
+"../../../../../../Downloads/12thoct/3_bit_adder.v" \
+"../../../../../../Downloads/12thoct/and_alu.v" \
+"../../../../kgp_risc.srcs/sources_1/new/alu_control_decoder.v" \
+"../../../../kgp_risc.srcs/sources_1/new/cmov.v" \
+"../../../../kgp_risc.srcs/sources_1/new/clkdiv.v" \
+"../../../../kgp_risc.gen/sources_1/ip/instruction_memory_3/sim/instruction_memory.v" \
+"../../../../../../Downloads/Lab_Day_15/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

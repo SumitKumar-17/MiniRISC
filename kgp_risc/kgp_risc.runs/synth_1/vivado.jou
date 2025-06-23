@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Nov 12 16:40:18 2024
+# Process ID: 23160
+# Current directory: C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1
+# Command line: vivado.exe -log risc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source risc.tcl
+# Log file: C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1/risc.vds
+# Journal file: C:/Users/thean_f8wkkz4/Documents/kgp_risc/kgp_risc.runs/synth_1\vivado.jou
+# Running On        :Pavilion-Antik
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5700U with Radeon Graphics         
+# CPU Frequency     :1797 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16455 MB
+# Swap memory       :16106 MB
+# Total Virtual     :32561 MB
+# Available Virtual :13942 MB
+#-----------------------------------------------------------
+source risc.tcl -notrace

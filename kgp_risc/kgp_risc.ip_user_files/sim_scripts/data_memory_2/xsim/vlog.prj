@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../kgp_risc.gen/sources_1/ip/data_memory_2/sim/data_memory.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

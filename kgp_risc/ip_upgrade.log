@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Nov  5 16:00:46 2024
+| Host         : Pavilion-Antik running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'data_memory'
+
+1. Summary
+----------
+
+SUCCESS in the update of data_memory (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Nov  5 16:00:31 2024
+| Host         : Pavilion-Antik running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'instruction_memory'
+
+1. Summary
+----------
+
+SUCCESS in the update of instruction_memory (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 8)) to current project options.
+
