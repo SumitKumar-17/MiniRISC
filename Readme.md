@@ -62,14 +62,17 @@ MinRISC (Minimal Simple RISC) is a custom-designed 32-bit RISC processor archite
 
 ## Demonstrations
 
-* [ ] **Bubble Sort** implemented and simulated on the FPGA
-* [ ] **GCD Algorithm** tested end-to-end
+* [ ] **Bubble Sort** implemented and simulated 
+* [ ] **GCD Algorithm** tested end-to-end on FPGA
+* [ ] **Booth Multiplication** with all the intermediate results 
 * [ ] All ALU operations verified using custom Python-based assembler and test harness
 
 ### FPGA Deployment
 
-Synthesize using Vivado and upload bitstream to your Nexys 4 board.
+Synthesize using Vivado and upload bitstream to your FPGA. 
 
+My Codes were tested upon a Digilent Nexys 4 DDR Artix-7 FPGA. 
+[Board Link](https://www.google.com/url?sa=i&url=https%3A%2F%2Frobu.in%2Fproduct%2Fdigilent-nexys-a7-fpga-trainer-board%2F&psig=AOvVaw3vgIiujYJGpOWStOhbVsS5&ust=1751307815796000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCIj6xLqgl44DFQAAAAAdAAAAABAE)
 
 ## Future Work
 
